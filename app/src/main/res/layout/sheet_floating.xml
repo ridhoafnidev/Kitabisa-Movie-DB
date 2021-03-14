@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/ripplePopular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/component_big"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/popular"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <ImageButton
+                android:id="@+id/bt_close"
+                android:layout_width="@dimen/component_extra_big"
+                android:layout_height="@dimen/component_extra_big"
+                android:layout_margin="@dimen/component_big"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/darker_gray"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/ic_close" />
+
+        </FrameLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/rippleUpcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/component_big"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upcominig"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/rippleTopRated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/component_big"
+            app:layout_constraintTop_toBottomOf="@+id/rippleUpcoming">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/top_rated"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/rippleNowPlaying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/component_big"
+            app:layout_constraintTop_toBottomOf="@+id/rippleTopRated">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/now_playing"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

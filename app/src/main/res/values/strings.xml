@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Kitabisa Movie DB</string>
+    <string name="favorite_movie">Favorite Movie</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="release_date">Release Date</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="image_poster_movie">Image Poster Movie</string>
+    <string name="something_wrong">Sorry, something wrong!</string>
+    <string name="no_data">Empty Data</string>
+    <string name="no_internet">No internet access</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="detail_movie">Detail Movie</string>
+    <string name="title_share">Share</string>
+    <string name="share_text">Quickly watch together %s in Movie DB</string>
+    <string name="add_favorite_text">Added %s to Favorite</string>
+    <string name="delete_favorite_text">Deleted %s, Undo?</string>
+    <string name="message_undo">Undo</string>
+    <string name="message_ok">Ok</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="popular">Popular</string>
+    <string name="upcominig">Upcominig</string>
+
 </resources>

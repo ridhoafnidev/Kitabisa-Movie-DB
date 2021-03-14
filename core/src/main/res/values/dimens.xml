@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="component_tiny">2dp</dimen>
+    <dimen name="component_small">4dp</dimen>
+    <dimen name="component_normal">6dp</dimen>
+    <dimen name="component_medium">8dp</dimen>
+    <dimen name="component_big">12dp</dimen>
+    <dimen name="component_extra">16dp</dimen>
+    <dimen name="component_extra_big">20dp</dimen>
+    <dimen name="component_huge">26dp</dimen>
+    <dimen name="component_special">28dp</dimen>
+    <dimen name="component_super">32dp</dimen>
+
+    <dimen name="radius">8dp</dimen>
+
+    <dimen name="appbar_padding_top">8dp</dimen>
+</resources>

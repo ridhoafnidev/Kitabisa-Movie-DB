@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "581610716571",
+    "project_id": "kitabisamoviedb",
+    "storage_bucket": "kitabisamoviedb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581610716571:android:c1523ae741e9a9c0eef53e",
+        "android_client_info": {
+          "package_name": "com.ridhoafni.kitabisamoviedb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581610716571-sgfoq1u97rq0kq610304vphesiuc8tsf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvG6cS59dOs4-4G6Zklt1h8de0AlrYqrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581610716571-sgfoq1u97rq0kq610304vphesiuc8tsf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

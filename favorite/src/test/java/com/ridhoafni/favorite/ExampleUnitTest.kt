@@ -1,4 +1,4 @@
-package com.ridhoafni.kitabisamoviedb
+package com.ridhoafni.favorite
 
 import org.junit.Test
 

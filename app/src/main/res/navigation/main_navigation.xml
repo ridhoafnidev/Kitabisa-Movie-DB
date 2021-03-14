@@ -9,5 +9,43 @@
         android:id="@+id/movieFragment"
         android:name="com.ridhoafni.kitabisamoviedb.view.movie.MovieFragment"
         android:label="movie_fragment"
-        tools:layout="@layout/movie_fragment" />
+        tools:layout="@layout/movie_fragment" >
+        <action
+            android:id="@+id/action_movieFragment_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment" />
+        <action
+            android:id="@+id/action_movieFragment_to_favoriteMovieFragment"
+            app:destination="@id/favoriteMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMovieFragment"
+        android:name="com.ridhoafni.kitabisamoviedb.view.detail.DetailMovieFragment"
+        android:label="detail_movie_fragment"
+        tools:layout="@layout/detail_movie_fragment" >
+        <argument
+            android:name="data"
+            app:argType="com.ridhoafni.core.domain.model.Movie" />
+        <action
+            android:id="@+id/action_detailMovieFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailMovieFragment_to_favoriteMovieFragment"
+            app:destination="@id/favoriteMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteMovieFragment"
+        android:name="com.ridhoafni.favorite.FavoriteMovieFragment"
+        app:moduleName="Kitabisa_Movie_DB.favorite"
+        android:label="favorite_movie_fragment"
+        tools:layout="@layout/favorite_movie_fragment" >
+        <action
+            android:id="@+id/action_favoriteMovieFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
+        <action
+            android:id="@+id/action_favoriteMovieFragment_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment" />
+    </fragment>
 </navigation>

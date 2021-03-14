@@ -8,14 +8,14 @@ import com.ridhoafni.kitabisamoviedb.MainActivity
 import com.ridhoafni.kitabisamoviedb.R
 
 class SplashScreenActivity : AppCompatActivity() {
-    var delayMilis: Long = 2000;
+    private var delay: Long = 2000
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-        Handler(mainLooper).postDelayed(Runnable {
+        Handler(mainLooper).postDelayed({
             val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
             startActivity(intent)
             finish()
-        }, delayMilis)
+        }, delay)
     }
 }
