@@ -28,12 +28,12 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             buildConfigField "String", "IMAGE_ENDPOINT", "\"https://image.tmdb.org/t/p/w342\""
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            minifyEnabled true
+            minifyEnabled false
             buildConfigField "String", "IMAGE_ENDPOINT", "\"https://image.tmdb.org/t/p/w342\""
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -53,6 +53,6 @@ android {
 
 dependencies {
     implementation project(":core")
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.core:core-ktx:$coreVersion"
 }

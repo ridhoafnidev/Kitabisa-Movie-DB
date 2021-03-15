@@ -1,4 +1,5 @@
 ##---------------Begin: proguard configuration for SQLCipher  ----------
+#noinspection ShrinkerUnresolvedReference
 -keep,includedescriptorclasses class net.sqlcipher.** { *; }
 -keep,includedescriptorclasses interface net.sqlcipher.** { *; }
 
@@ -92,9 +93,7 @@
 
 -keep class * extends androidx.fragment.app.Fragment{}
 
--keep class androidx.test.espresso.IdlingResource { *; }
--keep class androidx.test.espresso.IdlingRegistry { *; }
--keep class androidx.test.espresso.idling.CountingIdlingResource { *; }
+-keep class androidx.test.espresso** { *; }
 
 # Proguard rules that are applied to your test apk/code.
 -ignorewarnings
@@ -104,8 +103,7 @@
 -dontnote junit.framework.**
 -dontnote junit.runner.**
 
--dontwarn android.test.**
--dontwarn android.support.test.**
+-dontwarn androidx.test.**
 -dontwarn org.junit.**
 -dontwarn org.hamcrest.**
 -dontwarn com.squareup.javawriter.JavaWriter

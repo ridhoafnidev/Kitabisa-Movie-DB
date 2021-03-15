@@ -25,13 +25,13 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField "String", "BASE_URL", "\"https://api.themoviedb.org/3/\""
             buildConfigField "String", "IMAGE_ENDPOINT", "\"https://image.tmdb.org/t/p/w342\""
         }
         debug {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField "String", "BASE_URL", "\"https://api.themoviedb.org/3/\""
             buildConfigField "String", "IMAGE_ENDPOINT", "\"https://image.tmdb.org/t/p/w342\""

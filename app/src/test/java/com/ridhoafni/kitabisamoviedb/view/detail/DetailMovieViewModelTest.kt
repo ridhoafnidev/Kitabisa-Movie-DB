@@ -72,7 +72,7 @@ class DetailMovieViewModelTest {
     }
 
     @Test
-    fun testSetMovieFavorite(){
+    fun testSetMovieFavorite() {
         val dataDummyMovie = FakeData.dummyMovie()[0]
         doNothing().`when`(movieDbUseCase).setFavouriteMovie(dataDummyMovie, true)
         viewModel.setFavoriteMovie(dataDummyMovie, true)
