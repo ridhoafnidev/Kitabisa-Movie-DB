@@ -15,42 +15,29 @@ This project takes advantage of many popular libraries, plugins and tools of the
 -   [Jetpack](https://developer.android.com/jetpack):
     -   [Android KTX](https://developer.android.com/kotlin/ktx.html) - provide concise, idiomatic Kotlin to Jetpack and Android platform APIs.
     -   [AndroidX](https://developer.android.com/jetpack/androidx) - major improvement to the original Android [Support Library](https://developer.android.com/topic/libraries/support-library/index), which is no longer maintained.
-    -   [Benchmark](https://developer.android.com/studio/profile/benchmark.html) - handles warmup, measures your code performance, and outputs benchmarking results to the Android Studio console.
-    -   [Data Binding](https://developer.android.com/topic/libraries/data-binding/) - allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
+    -   [View Binding](https://developer.android.com/topic/libraries/view-binding/) - a feature that allows you to more easily write code that interacts with views. . Once view binding is enabled in a module, it generates a binding class for each XML layout file present in that module.
     -   [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle) - perform actions in response to a change in the lifecycle status of another component, such as activities and fragments.
     -   [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - lifecycle-aware, meaning it respects the lifecycle of other app components, such as activities, fragments, or services.
     -   [Navigation](https://developer.android.com/guide/navigation/) - helps you implement navigation, from simple button clicks to more complex patterns, such as app bars and the navigation drawer.
-    -   [Paging](https://developer.android.com/topic/libraries/architecture/paging/) - helps you load and display small chunks of data at a time. Loading partial data on demand reduces usage of network bandwidth and system resources.
     -   [Room](https://developer.android.com/topic/libraries/architecture/room) - persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
     -   [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - designed to store and manage UI-related data in a lifecycle conscious way. The ViewModel class allows data to survive configuration changes such as screen rotations.
 -   [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - managing background threads with simplified code and reducing needs for callbacks.
--   [Dagger2](https://dagger.dev/) - dependency injector for replacement all FactoryFactory classes.
+-   [Flow](https://dagger.dev/) - dependency injector for replacement all FactoryFactory classes.
 -   [Retrofit](https://square.github.io/retrofit/) - type-safe HTTP client.
--   [Coil](https://github.com/coil-kt/coil) - image loading library for Android backed by Kotlin Coroutines.
 -   [Moshi](https://github.com/square/moshi) - makes it easy to parse JSON into Kotlin objects.
 -   [Timber](https://github.com/JakeWharton/timber) - a logger with a small, extensible API which provides utility on top of Android's normal Log class.
--   [Stetho](http://facebook.github.io/stetho/) - debug bridge for applications via Chrome Developer Tools.
--   [and more...](https://github.com/VMadalin/kotlin-sample-app/blob/master/buildSrc/src/main/kotlin/dependencies/Dependencies.kt)
 
 ### Test dependencies
 
--   [UIAutomator](https://developer.android.com/training/testing/ui-automator) - a UI testing framework suitable for cross-app functional UI testing across system and installed apps.
 -   [Espresso](https://developer.android.com/training/testing/espresso) - to write concise, beautiful, and reliable Android UI tests
--   [Robolectric](https://github.com/robolectric/robolectric) - industry-standard unit testing framework for Android.
 -   [JUnit](https://github.com/junit-team/junit4) - a simple framework to write repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks.
 -   [Mockk](https://github.com/mockk/mockk) - provides DSL to mock behavior. Built from zero to fit Kotlin language.
 -   [AndroidX](https://github.com/android/android-test) - the androidx test library provides an extensive framework for testing Android apps.
--   [and more...](https://github.com/VMadalin/kotlin-sample-app/blob/master/buildSrc/src/main/kotlin/dependencies/TestDependencies.kt)
 
 ### Plugins
 
--   [Ktlint](https://github.com/pinterest/ktlint) - an anti-bikeshedding Kotlin linter with built-in formatter.
--   [Detekt](https://github.com/arturbosch/detekt) - a static code analysis tool for the Kotlin programming language.
--   [Spotless](https://github.com/diffplug/spotless) - a code formatter can do more than just find formatting errors.
 -   [Versions](https://github.com/ben-manes/gradle-versions-plugin) - make easy to determine which dependencies have updates.
 -   [SafeArgs](https://developer.android.com/guide/navigation/navigation-pass-data#Safe-args) - generates simple object and builder classes for type-safe navigation and access to any associated arguments.
--   [Jacoco](https://github.com/jacoco/jacoco) - code coverage library
--   [and more...](https://github.com/VMadalin/kotlin-sample-app/blob/master/buildSrc/build-dependencies.gradle.kts)
 
 ## Resources
 
@@ -118,17 +105,15 @@ Please feel free to post questions, recommendations, ideas, bugs by create [new 
   <img src="https://avatars0.githubusercontent.com/u/18151158?s=400&u=bd6e5ddff1df0d632b93855da0300410854b806e&v=4" width="70" align="left">
 </a>
 
-**Madalin Valceleanu**
+**Ridho Afni**
 
-[![Linkedin](https://img.shields.io/badge/-linkedin-grey?logo=linkedin)](https://www.linkedin.com/in/vmadalin/)
-[![Twitter](https://img.shields.io/badge/-twitter-grey?logo=twitter)](https://twitter.com/MValceleanu)
-[![Medium](https://img.shields.io/badge/-medium-grey?logo=medium)](https://medium.com/@vmadalin)
-[![Web](https://img.shields.io/badge/-web-grey?logo=appveyor)](http://vmadalin.com/)
+[![Linkedin](https://img.shields.io/badge/-linkedin-grey?logo=linkedin)](https://www.linkedin.com/in/ridhoafni/)
+[![Web](https://img.shields.io/badge/-web-grey?logo=appveyor)](http://ridhoafni.my.id/)
 
 ## License
 
 ```license
-Copyright 2019-2020 vmadalin.com
+Copyright 2019-2020 ridhoafni.my.id
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
