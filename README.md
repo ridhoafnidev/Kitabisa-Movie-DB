@@ -94,15 +94,10 @@ Google Developers Codelabs provide a guided, tutorial, hands-on coding experienc
 -   [Android Developer Fundamentals](https://developer.android.com/courses/fundamentals-training/toc-v2)
 -   [Android Developer Codelabs](https://codelabs.developers.google.com/?cat=Android)
 
-## Contributions
-
-All contributions are welcome!
-Please feel free to post questions, recommendations, ideas, bugs by create [new issue](https://github.com/VMadalin/kotlin-sample-app/issues/new) following the template or if you want create directly [new pull request](https://github.com/VMadalin/kotlin-sample-app/compare).
-
 ## Authors
 
 <a href="https://twitter.com/MValceleanu" target="_blank">
-  <img src="https://avatars0.githubusercontent.com/u/18151158?s=400&u=bd6e5ddff1df0d632b93855da0300410854b806e&v=4" width="70" align="left">
+  <img src="https://avatars.githubusercontent.com/u/57715116?s=60&v=4" width="70" align="left">
 </a>
 
 **Ridho Afni**
