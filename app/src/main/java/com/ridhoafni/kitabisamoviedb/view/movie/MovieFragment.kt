@@ -232,11 +232,16 @@ class MovieFragment : Fragment() {
         })
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
+    override fun onDestroy() {
+//        binding.recyclerViewMovie.addOnAttachStateChangeListener(object : View.OnAttachStateChangeListener{
+//            override fun onViewAttachedToWindow(v: View) {}
+//            override fun onViewDetachedFromWindow(v: View) {
+//                binding.recyclerViewMovie.adapter=null
+//            }
+//        })
+        super.onDestroy()
         _binding = null
     }
-
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         activity?.menuInflater?.inflate(R.menu.main_menu, menu)

@@ -82,6 +82,13 @@ class FavoriteMovieFragment : Fragment() {
     }
 
     override fun onDestroyView() {
+//        binding.recyclerViewFavoriteMovie.addOnAttachStateChangeListener(object : View.OnAttachStateChangeListener{
+//            override fun onViewAttachedToWindow(v: View) {}
+//            override fun onViewDetachedFromWindow(v: View) {
+//                binding.recyclerViewFavoriteMovie.adapter=null
+//            }
+//        })
+        binding.recyclerViewFavoriteMovie.adapter = null
         super.onDestroyView()
         _binding = null
     }

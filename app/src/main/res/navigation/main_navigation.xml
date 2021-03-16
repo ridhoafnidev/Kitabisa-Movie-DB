@@ -27,7 +27,10 @@
             app:argType="com.ridhoafni.core.domain.model.Movie" />
         <action
             android:id="@+id/action_detailMovieFragment_to_movieFragment"
-            app:destination="@id/movieFragment" />
+            app:destination="@id/movieFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/movieFragment"
+            app:popUpToInclusive="true" />
         <argument
             android:name="type"
             app:argType="string" />
@@ -43,7 +46,10 @@
         tools:layout="@layout/favorite_movie_fragment" >
         <action
             android:id="@+id/action_favoriteMovieFragment_to_movieFragment"
-            app:destination="@id/movieFragment" />
+            app:destination="@id/movieFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/movieFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_favoriteMovieFragment_to_detailMovieFragment"
             app:destination="@id/detailMovieFragment" />

@@ -66,4 +66,5 @@ ext {
     firebaseAnalitycsKtx = '18.0.2'
     firebaseCrashlytics = '17.4.0'
     shimmerVersion = "0.5.0"
+    leakCanaryVersion = '2.4'
 }

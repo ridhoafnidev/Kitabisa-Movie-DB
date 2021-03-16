@@ -229,6 +229,7 @@
       <w>launchable</w>
       <w>layoutlib</w>
       <w>lcom</w>
+      <w>leakcanary</w>
       <w>leasable</w>
       <w>lifecycles</w>
       <w>liveness</w>

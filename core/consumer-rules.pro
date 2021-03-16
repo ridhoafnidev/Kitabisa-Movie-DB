@@ -84,15 +84,20 @@
 ##---------------Begin: proguard configuration for RxJava  ----------
 # Uncomment if you use RxJava
 #-dontwarn java.util.concurrent.Flow*
+
 # Navigation Component
 -keepnames class androidx.navigation.fragment.NavHostFragment
 
+# Keep Parcelize run
 -keepnames class * extends kotlinx.parcelize.Parcelize
 
+# Keep Parcelable run
 -keepnames class * extends android.os.Parcelable
 
+# Keep Fragment to run in first launch in MainActivity.kt
 -keep class * extends androidx.fragment.app.Fragment{}
 
+# Keep espresso testing run
 -keep class androidx.test.espresso** { *; }
 
 # Proguard rules that are applied to your test apk/code.
